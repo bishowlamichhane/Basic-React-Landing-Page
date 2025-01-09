@@ -1,0 +1,212 @@
+
+:root{
+    --marginOfBody:0;
+}
+*{
+    margin: var(--marginOfBody);
+}
+
+
+.headerElement{
+   
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 60px;
+
+    
+
+
+}
+
+.div1{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.div2{
+
+    
+    display: flex;
+    
+    justify-content:center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    
+}
+
+.div2 li{
+    font-size: 20px;
+}
+.div3{
+    
+    display: flex;
+    
+    justify-content:center;
+    align-items: center;
+}
+
+.loginButton{
+    background-color: rgb(211, 7, 7);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out; 
+    &:hover{
+        outline:2px solid  rgb(211, 7, 7);
+        background-color: white;
+        color:  rgb(211, 7, 7);
+
+    }
+}
+
+.navElement{
+
+position: relative;
+}
+.div2 li{
+    cursor: pointer;
+}
+
+.navElement::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navElement:hover::after{
+    width: 100%;
+}
+
+.heroElement {
+   height: calc(100vh - 260px);
+    margin: 100px 50px;
+    display: flex;
+  
+
+  }
+  
+  .textContent{
+flex: 1;
+display: flex;
+flex-direction: column;
+
+padding-left: 12% ;
+
+
+  }
+
+  .textSlogan{
+    line-height: 85px;
+    font-size: 80px;
+    font-weight: 800;
+   min-height: 280px;
+    margin-bottom: 5px;
+   
+    
+
+  }
+
+
+
+  .textBody{
+    margin: 10px 0;
+    font-size: 20px;
+    width: 90%;
+    line-height: 26px;
+    font-style: italic;
+
+  }
+  @media only screen and (max-width: 1270px) {
+    .textSlogan {
+        line-height: 70px; /* Adjust line height if needed */
+        font-size: 60px; /* Reduce font size */
+        min-height: 330px; /* Increase minimum height */
+    }
+
+    .textBody {
+        margin-top: 20px; /* Add some space between the slogan and body */
+    }
+}
+
+  .imageContent{
+    flex:1;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .category{
+    
+    color: black;
+    border: 1px solid black;
+  
+    padding: 8px 25px;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 400;
+    transition: all 0.15s ease-in-out; 
+    &:hover{
+        outline:2px solid  black;
+        background-color: black;
+        color:  white;
+
+    }
+}
+
+.textButtons{
+    margin-top: 20px;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideLinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 15px;
+    
+}
+
+.sideImages{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15px;
+    align-items: center;
+    width: 15%;
+
+
+
+}
+
+
+  .sideLinkImages1{
+    cursor: pointer;
+    width: 28px;
+    object-fit: contain;
+    
+    
+  }
+  .sideLinkImages2{
+      cursor: pointer;
+    width: 25px;
+    object-fit: contain;
+    
+    
+  }
+  
