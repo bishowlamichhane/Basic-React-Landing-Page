@@ -8,15 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-<<<<<<< HEAD
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-=======
-   
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  
->>>>>>> cb9fdb61c019e1cbb4ffadf40a7ae26b17fc6636
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -35,8 +28,5 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.9.0",
     "vite": "^5.4.1"
-  },
-{
-  "homepage": "https://bishowlamichhane.github.io/Basic-React-Landing-Page"
-}
+  }
 }
